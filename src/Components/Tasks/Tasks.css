@@ -1,0 +1,49 @@
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.3em 0;
+    height: 30vh;
+    overflow-y: auto;
+}
+
+.task {
+    display: flex;
+    width: 100%;
+    margin: .2em 0;
+}
+
+.task-text {
+    display: flex;
+    flex-direction: column;
+    padding: .2em .3em;
+    width: 60%;
+    background-color: #7A7A7A;
+}
+
+.task-text h3 {
+    word-wrap: break-word;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2em .3em;
+    width: 40%;
+}
+
+.task-actions button {
+    margin-right: .2em;
+}
+
+@media (max-width: 1068px) {
+    .task-actions {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .task-actions button {
+        margin-top: .4em;
+    }
+}
